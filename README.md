@@ -2,9 +2,7 @@
 
 This repository contains Python scripts for solving various programming problems in ECE2112. The problems are focused on creating arrays and using the NumPy library for numerical analysis. Below are the details of each script included in this repository:
 
-## Scripts
-
-### Normalization Problem
+## Normalization Problem
 
 **Instructions:** In this problem, create a random 5 x 5 ndarray and store it to variable X. Normalize X. Save your normalized ndarray as X_normalized.npy
 
@@ -52,7 +50,9 @@ Normalized Array:
  [-1.78325269 -2.02016749  0.85634317  0.66350295  0.98873998]
  [ 1.37328739  0.73786513 -0.4577726   0.67190312 -1.67297558]]
 
- ### Divisible by 3 Problem
+ **Analysis:** The purpose of this script is to demonstrate data normalization, a crucial step in many machine learning and data analysis tasks, which scales the data to have a mean of 0 and a standard deviation of 1.
+
+## Divisible by 3 Problem
 
 **Instructions:** In this problem, create a 10 x 10 ndarray which are the squares of the first 100 positive integers. From this ndarray, determine all the elements that are divisible by 3. Save the result as div_by_3.np.yy.
 
@@ -70,3 +70,4 @@ div_by_3 = A[A % 3 == 0]
 # Save the result
 np.save('div_by_3.npy', div_by_3)
 ```
+**Analysis:** This Python script generates a 10x10 ndarray of squares of the first 100 positive integers and extracts the elements divisible by 3, saving the result to a file.
