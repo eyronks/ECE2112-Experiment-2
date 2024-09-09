@@ -50,7 +50,7 @@ Normalized Array:
  [-1.78325269 -2.02016749  0.85634317  0.66350295  0.98873998]
  [ 1.37328739  0.73786513 -0.4577726   0.67190312 -1.67297558]]
 
- **Analysis:** The purpose of this script is to demonstrate data normalization, a crucial step in many machine learning and data analysis tasks, which scales the data to have a mean of 0 and a standard deviation of 1.
+ **Solution Approach:** The code imports NumPy and creates a 5x5 random ndarray, ensuring reproducibility with a random seed. It calculates the array's mean and standard deviation, then normalizes the array by subtracting the mean and dividing by the standard deviation. The original and normalized arrays are printed for comparison, and the normalized array is saved as X_normalized.npy using NumPy's save function. This approach efficiently performs data preprocessing tasks using NumPy's array operations.
 
 ## Divisible by 3 Problem
 
@@ -70,4 +70,4 @@ div_by_3 = A[A % 3 == 0]
 # Save the result
 np.save('div_by_3.npy', div_by_3)
 ```
-**Analysis:** This Python script generates a 10x10 ndarray of squares of the first 100 positive integers and extracts the elements divisible by 3, saving the result to a file.
+**Solution Approach:** The code takes a step-by-step approach to solve the problem. It begins by generating an array of squares of the first 100 positive integers using a list comprehension and reshapes it into a 10x10 matrix. Next, it uses NumPy's vectorized operations to find the elements in the array that are divisible by 3, by applying the modulo operator (%) to each element and checking if the result is 0. Finally, it saves the resulting array of elements divisible by 3 to a file named div_by_3.npy using NumPy's save function. This approach leverages NumPy's efficient array operations to perform the tasks in a concise and efficient manner.
